@@ -42,7 +42,9 @@
 <div class="outer-wrapper">
 	<div class="inner-wrapper">
 
-		<header role="banner" class="header-banner">
+    <div class="reveal-wrapper">
+
+      <header role="banner" class="header-banner">
 	<div class="container">
 
 		<a href="#" class="open-panel"><span></span></a>
@@ -88,37 +90,73 @@
 </header>
 
 
-      
-
-    <!-- Begin Content Wrapper -->
+          <!-- Begin Content Wrapper -->
     <div class="content main">
       <div class="container">
 
 
 
-      </div>
+        
+
+<div class="home-carousel hero">
+  <ul>
+    <li>
+      <img src="/images/photo-1432836431433-925d3cc0a5cd.jpg" alt="">
+    </li>
+    <li>
+      <img src="/images/photo-1433838552652-f9a46b332c40.jpg" alt="">
+    </li>
+    <li>
+      <img src="/images/photo-1433840496881-cbd845929862.jpg" alt="">
+    </li>
+  </ul>
+</div>
+
+
+            </div>
     </div>
     <!-- ./End Content Wrapper -->
 
 
-
-		 	  <!-- Footer Component -->
+       	  <!-- Footer Component -->
  	  <footer role="contentinfo">
  	  	<div class="content">
  	  		<div class="container">
 
+          <ul>
+            <li>
+              Item #1
+            </li>
+            <li>
+              Item #2
+            </li>
+            <li>
+              Item #3
+            </li>
+            <li>
+              Item #4
+            </li>
+            <li>
+              Item #5
+            </li>
+          </ul>
+
+          <div class="pw-logo">
+          <img src="/images/placewise-logo.png" alt="Placewise Media">
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- ./Footer Component -->
 
 
- 	  		</div>
- 	  	</div>
- 	  </footer>
- 	  <!-- ./Footer Component -->
-
+    </div>
 
     <div class="loadtime"></div>
     <div class="viewport"></div>
 
-	</div>
+  </div>
 </div>
     <!-- scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -127,6 +165,19 @@
     <script src="../js/build/production.min.js"></script>
 
     
+
+    <script>
+      jQuery('.home-carousel').slippry({
+        // pager
+        pager: false,
+
+        // controls
+        auto: false,
+
+        //speed
+        speed: 500
+      });
+    </script>
 
     <script src="http://localhost:4000/livereload.js"></script>
   </body>

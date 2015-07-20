@@ -5,9 +5,12 @@ footer {
 	color: $color-brand-tertiary;
 	text-align: center;
 
-	.content {
-		@include padding(0);
-	}
+  @if $reveal-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+  }
 
 	.contact-social {
 		@include outer-container;
@@ -85,7 +88,6 @@ footer {
 
 	ul {
 		@include horizontal-list;
-		margin: $base-spacing auto;
 
 		li {
 			margin-right: $base-spacing *2;

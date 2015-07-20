@@ -127,7 +127,7 @@ connect: {
     },
     images: {
       expand: true,
-      cwd: '<%= config.src %>/images',
+      cwd: '<%= config.src %>/templates/assets/images',
       src: '**',
       dest: '<%= config.dist %>/images'
     },

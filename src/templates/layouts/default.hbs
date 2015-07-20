@@ -2,15 +2,23 @@
 <div class="outer-wrapper">
 	<div class="inner-wrapper">
 
-		{{> header }}
+    <div class="reveal-wrapper">
 
-      {{> body }}
+      {{> header }}
 
-		{{> footer }}
+      {{> content }}
+
+        {{> body }}
+
+      {{> end_content }}
+
+      {{> footer }}
+
+    </div>
 
     <div class="loadtime"></div>
     <div class="viewport"></div>
 
-	</div>
+  </div>
 </div>
 {{> foot }}

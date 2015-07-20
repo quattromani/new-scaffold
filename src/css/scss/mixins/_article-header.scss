@@ -5,7 +5,6 @@
 	border-bottom: 1px solid $article-header-border-color;
   color: $article-header-color;
   text-transform: uppercase;
-  font-weight: 200;
 
 	@include media($mobile) {
     @include font-size(16);

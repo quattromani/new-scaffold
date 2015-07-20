@@ -1,0 +1,75 @@
+.calendar {
+	@include media($mobile) {
+		display: none;
+	}
+}
+
+.calendar-month {
+	@include padding(0);
+
+	ul {
+		@include horizontal-list;
+	}
+
+	li {
+		h3 {
+			@include inline-block;
+			@include font-family($heading-font-family);
+			@include font-size(20);
+      min-width: 5rem;
+			margin-bottom: 0;
+      color: $calendar-month-text-color;
+			text-transform: uppercase;
+		}
+
+    .js-prev {
+      @include icon-before($icon-chevron-left);
+      color: $calendar-prev-next;
+
+      &:before {
+        vertical-align: middle;
+      }
+    }
+
+    .js-next {
+      @include icon-after($icon-chevron-right);
+      color: $calendar-prev-next;
+
+      &:after {
+        vertical-align: middle;
+      }
+    }
+	}
+
+	button {
+		@include padding(0);
+		background-color: initial;
+		color: $base-font-color;
+	}
+}
+
+.calendar-day {
+	@include size(45px);
+	background-color: $calendar-day-bg;
+	text-align: center;
+
+	&.current-month {
+		background-color: $color-mid-grey;
+		color: $color-white;
+	}
+
+	&.current-day {
+		@include box-shadow(inset 0 0 0 2px $current-day-border);
+	}
+
+	&.has-event {
+		background-color: $day-has-event-bg;
+		color: $day-has-event-text-color;
+	}
+
+	&:hover,
+  &.is-selected {
+		background-color: $calendar-day-hover-bg;
+		color: $calendar-day-hover-text-color;
+	}
+}

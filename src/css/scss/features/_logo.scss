@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.pw-logo {
+  img {
+    @include margin(0 auto);
+  }
+}

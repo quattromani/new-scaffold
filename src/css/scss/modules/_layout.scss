@@ -8,7 +8,6 @@
 .content {
   @include padding($base-spacing);
   position: relative;
-  min-height: 85vh; // experimental
   overflow: hidden;
   z-index: 99;
 }

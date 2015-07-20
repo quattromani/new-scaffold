@@ -4,20 +4,22 @@ $secondary-alpha: .45;
 
 // =Colors
 $color-white: #fff;
-$color-off-white: whitesmoke;
+$color-off-white: #f2f2f2;
 $color-black: #000;
 $color-grey: #999;
-$color-light-grey: #ccc;
-$color-dark-grey: #4e4e56;
+$color-light-grey: #cecece;
+$color-mid-grey: #bfbfbf;
+$color-dark-grey: #666;
 $color-pre-green: #3eb633;
 
 // =Brand Palette
-$color-brand-primary: black; // Headings
-$color-brand-secondary: black; // Text
-$color-brand-tertiary: white; // Background
-$color-brand-quaternary: #ffda3a; // Accent yellow
-$color-brand-quinary: #ebebeb; // Accent grey
+$color-brand-primary: #2b85d3; // Headings
+$color-brand-secondary: #283347; // Text
+$color-brand-tertiary: #e4d9cc; // Background
+$color-brand-quaternary: #1f9d94; // Accent yellow
+$color-brand-quinary: #e65a4a; // Accent grey
 $color-brand-senary: #ffda3a; // Accent yellow
+$color-brand-septenary: #748791;
 
 $color-brand-primary-complimentary: white;
 $color-brand-secondary-complimentary: white;
@@ -25,6 +27,7 @@ $color-brand-tertiary-complimentary: black;
 $color-brand-quaternary-complimentary: #ffda3a;
 $color-brand-quinary-complimentary: #ebebeb;
 $color-brand-senary-complimentary: #ffda3a;
+$color-brand-septenary-complimentary: #c2c2c2;
 
 $color-primary-red: red;
 $color-primary-green: green;

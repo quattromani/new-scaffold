@@ -1,0 +1,83 @@
+@mixin teaser {
+  position: relative;
+  overflow: hidden;
+
+  * {
+    @include transition;
+  }
+
+  .retailer-logo {
+    display: none;
+  }
+
+  img,
+  .replaced-missing-image {
+    @include responsive-image(relative, 150px);
+    position: relative;
+    float: left;
+    margin-right: $base-spacing;
+    border: 1px solid $color-light-grey;
+
+    span {
+      @include centerer;
+    }
+    @include media($mobile) {
+      display: none;
+    }
+  }
+
+  h3,
+  h4 {
+    @include font-size(16);
+    max-width: calc(100% - 7em);
+  }
+
+  h3 {
+    @include font-family($heading-font-family-alt);
+  }
+
+  h4 {
+    @include font-family($base-font-family);
+  }
+
+  time {
+    @extend .flag;
+    position: absolute;
+    top: 0;
+    bottom: initial;
+    right: 0;
+    width: 8em;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .read-more {
+    @include margin($base-spacing/2 0);
+  }
+
+  .deal-info-wrapper {
+    overflow: hidden;
+  }
+
+  &:hover {
+    img {
+      @include opacity(.8);
+    }
+
+    h3 {
+      color: $color-brand-primary !important;
+    }
+  }
+}
+
+[class*="-teaser"] {
+  @include teaser;
+}
+
+// .grid {
+//   [class*="-teaser"] {
+//     @include card;
+//   }
+// }

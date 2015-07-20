@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+.articles {
+	header {
+		h3 {
+			@include article-header;
+		}
+	}
+
+	article {
+		@include outer-container;
+		margin-bottom: $base-spacing;
+	}
+
+	.mrec-article {
+		@include span-columns(4);
+
+		@include media($mobile) {
+			@include span-columns(4);
+		}
+
+		a {
+			&:hover {
+				figcaption {
+					top: initial;
+					bottom: 0;
+				}
+			}
+		}
+	}
+
+	.trend-:last-of-type {
+		@include omega();
+	}
+
+	figure {
+		margin: 0 auto;
+		overflow: hidden;
+
+		img {
+      @include responsive-image(relative, 320px, 220px);
+      display: inline-block;
+      margin-right: $base-spacing;
+      vertical-align: middle;
+    }
+
+    figcaption {
+      @include margin(0);
+      @include padding($base-spacing/2);
+      @include transition(all, .3s);
+      position: absolute;
+      bottom: calc(0% - #{$base-spacing*6});
+      width: 100%;
+      background: rgba($color-black, $site-alpha);
+      text-transform: uppercase;
+      z-index: 2;
+
+      h4 {
+        @include font-family($heading-font-family-alt);
+        @include font-size(22);
+        min-height: 3em;
+        margin-bottom: $base-spacing;
+      }
+
+      p {
+        max-height: 4em;
+        overflow: hidden;
+      }
+
+      h4,
+      p {
+        color: $color-white;
+      }
+
+      .link {
+        @include icon-after($icon-angle-right);
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+
+    &:hover {
+      figcaption {
+        background: rgba($color-black, .9);
+      }
+    }
+
+    .replaced-missing-image {
+      @include padding($base-spacing);
+      position: relative;
+      min-height: 220px; // magic number fallback for failed images
+
+      span {
+        @include vertical-align;
+        position: absolute;
+        display: block;
+      }
+    }
+
+    @include media($mobile) {
+      @include margin(0 auto $base-spacing);
+      position: relative;
+      width: calc(100% - #{$base-spacing*2});
+    }
+  }
+}

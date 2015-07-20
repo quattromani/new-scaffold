@@ -1010,7 +1010,7 @@ function revealFooter() {
     }
   });
 });
-;;/** @preserve
+;/** @preserve
  *
  * slippry v1.2.7 - Responsive content slider for jQuery
  * http://slippry.com
