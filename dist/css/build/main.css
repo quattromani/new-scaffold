@@ -547,21 +547,17 @@ ul {
   border-bottom: 0; }
 
 .horizontal li {
-  display: inline; }
+  display: table-cell; }
 .horizontal.slashes li {
   padding: 0; }
-  .horizontal.slashes li:after {
+  .horizontal.slashes li + :before {
     content: '/';
     padding: 0 1rem; }
-  .horizontal.slashes li.js-last:after {
-    content: ''; }
 .horizontal.pipes li {
   padding: 0; }
-  .horizontal.pipes li:after {
+  .horizontal.pipes li + :before {
     content: '|';
-    padding: 0 0.25em 0 0.5em; }
-  .horizontal.pipes li.js-last:after {
-    content: ''; }
+    padding: 0 1rem; }
 
 .vertical > li {
   padding: 1rem 0; }
