@@ -9,12 +9,12 @@
 .inner-wrapper {
   position: relative;
   margin: 0 auto;
-  background-color: $color-white;
 }
 
 // Begin Nav
 nav[role=navigation] {
   position: relative;
+  width: 100%;
   width: 100%;
   background-color: $nav-bg;
   z-index: 88;

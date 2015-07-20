@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.reveal-wrapper {
+  background-color: $body-bg;
+}
+
 .container {
   @include outer-container;
   position: relative;

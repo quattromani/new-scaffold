@@ -150,10 +150,10 @@ html {
   box-sizing: inherit; }
 
 body {
-  background-color: #e4d9cc;
   background-color: black;
   background-image: -webkit-linear-gradient(black, #e4d9cc, 600px);
   background-image: linear-gradient(black, #e4d9cc, 600px);
+  background-color: #e4d9cc;
   word-wrap: break-word;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
@@ -2374,6 +2374,9 @@ details {
       padding: 1rem;
       min-width: 1rem; } }
 
+.reveal-wrapper {
+  background-color: #e4d9cc; }
+
 .container {
   zoom: 1;
   max-width: 1000px;
@@ -2492,11 +2495,11 @@ header[role=banner] {
 
 .inner-wrapper {
   position: relative;
-  margin: 0 auto;
-  background-color: #fff; }
+  margin: 0 auto; }
 
 nav[role=navigation] {
   position: relative;
+  width: 100%;
   width: 100%;
   background-color: transparent;
   z-index: 88; }

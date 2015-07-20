@@ -27,8 +27,8 @@ html {
 }
 
 body {
-  background-color: $color-brand-tertiary;
   @include linear-gradient($color-brand-tertiary-complimentary, $color-brand-tertiary, 600px);
+  background-color: $body-bg;
   background-attachment: $site-background-attachment;
   word-wrap: break-word;
   hyphens: auto;
