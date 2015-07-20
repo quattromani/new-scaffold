@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+header[role=banner] {
+	position: relative;
+	background-color: $header-bg;
+	text-align: center;
+	z-index: 9;
+
+	@include media($tablet) {
+		background-color: $color-brand-primary;
+	}
+
+	@include media($mobile) {
+		@include padding($base-spacing 0);
+		text-align: left;
+	}
+}
+
+
+.background-image, .hero-banner {
+  max-width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.sy-caption-wrap {
+	display: none;
+}

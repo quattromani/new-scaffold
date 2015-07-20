@@ -1,0 +1,50 @@
+// =Social Media
+$twitter-link-color: #00aced;
+$twitter-link-color-hover: darken($twitter-link-color, 5%);
+$facebook-link-color: #3b5998;
+$facebook-link-color-hover: darken($facebook-link-color, 5%);
+$youtube-link-color: #db1117;
+$youtube-link-color-hover: darken($youtube-link-color, 5%);
+$pinterest-link-color: #cb2027;
+$pinterest-link-color-hover: darken($pinterest-link-color, 5%);
+$instagram-link-color: #517fa4;
+$instagram-link-color-hover: darken($instagram-link-color, 5%);
+$github-link-color: #4183c4;
+$github-link-color-hover: darken($github-link-color, 5%);
+$codepen-link-color: $color-white;
+$codepen-link-color-hover: darken($codepen-link-color, 5%);
+$dribbble-link-color: #ea4c89;
+$dribbble-link-color-hover: darken($dribbble-link-color, 5%);
+$linkedin-link-color: #007bb6;
+$linkedin-link-color-hover: darken($linkedin-link-color, 5%);
+
+.twitter {
+	background-color: $twitter-link-color;
+	&:hover {
+		background-color: $twitter-link-color-hover;
+	}
+}
+.facebook {
+	background-color: $facebook-link-color;
+	&:hover {
+		background-color: $facebook-link-color-hover;
+	}
+}
+.youtube {
+	background-color: $youtube-link-color;
+	&:hover {
+		background-color: $youtube-link-color-hover;
+	}
+}
+.pinterest {
+	background-color: $pinterest-link-color;
+	&:hover {
+		background-color: $pinterest-link-color-hover;
+	}
+}
+.instagram {
+	background-color: $instagram-link-color;
+	&:hover {
+		background-color: $instagram-link-color-hover;
+	}
+}

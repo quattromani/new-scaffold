@@ -1,0 +1,26 @@
+// =Nav
+$nav-alignment: right;
+$nav-positioning: 0;
+$nav-bg: rgba($color-brand-primary, $site-alpha);
+$nav-mobile-bg: $color-brand-tertiary;
+$nav-bg-hover: null;
+$nav-font-family: $base-font-family-alt;
+$nav-font-size: 16px;
+$nav-font-weight: 100;
+$nav-text-transform: uppercase;
+$nav-color: $color-brand-secondary;
+$nav-color-hover: $base-link-color;
+$nav-dropdown-bg: null;
+$nav-dropdown-bg-hover: null;
+$nav-dropdown-font-size: $base-font-size;
+$nav-dropdown-color: null;
+$nav-dropdown-color-hover: null;
+$nav-dropdown-border-color: null;
+$nav-dropdown-border-color-hover: null;
+$nav-hamburger-bg: null;
+$nav-hamburger-color: $color-brand-primary;
+$nav-off-canvas-side: right; // left, right, down
+$nav-hamburger-side: right; // if off-canvas, this should match off-canvas side
+$nav-off-canvas-width: 70%;
+$nav-off-canvas-bg: $color-brand-tertiary;
+$nav-sticky: false !default;

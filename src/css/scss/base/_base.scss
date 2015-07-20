@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import "font-face",
+
+        "reset";
+
+/* ==========================
+    Base
+   ========================== */
+
+html {
+  box-sizing: border-box;
+  overflow: auto;
+  font-family: $base-font-family;
+  font-size: $base-font-reset;
+  color: $base-font-color;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-brand-tertiary;
+  @include linear-gradient($color-brand-tertiary-complimentary, $color-brand-tertiary, 600px);
+  background-attachment: $site-background-attachment;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  @include font-size($base-font-size);
+  line-height: $base-line-height;
+}
+
+[hidden], template {
+  display: none; }
+
+@if $support-legacy {
+  body {
+    .ie &[style] {
+      font-size: 16px !important;
+    }
+  }
+}
+
+img,
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+@import "colors",
+
+        "headings",
+
+        "links",
+
+        "lists",
+
+        "typography",
+
+        "icons",
+
+        "print";

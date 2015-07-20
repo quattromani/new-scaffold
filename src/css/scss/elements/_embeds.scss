@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+object {
+  height: 1000px;
+
+  @include media($mobile) {
+    @include size(auto);
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

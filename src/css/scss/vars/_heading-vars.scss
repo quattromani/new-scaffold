@@ -1,0 +1,15 @@
+// =Headings
+$heading-font-family: $base-font-family;
+$heading-font-family-alt: $base-font-family-alt;
+$heading-color-primary: $color-brand-secondary;
+$heading-color-secondary: $color-brand-secondary;
+$heading-line-height: 1;
+
+$heading-list: (
+	h1   26   500   $heading-font-family-alt    $heading-color-secondary,
+	h2   22   200   $heading-font-family    		$heading-color-primary,
+	h3   20   500   $heading-font-family    		$heading-color-primary,
+	h4   18   200   $heading-font-family-alt    $heading-color-secondary,
+	h5   18   500   $heading-font-family-alt    $heading-color-primary,
+	h6   16   100   $heading-font-family-alt 		$heading-color-secondary
+);

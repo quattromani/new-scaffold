@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.base-font {
+  font-family: $base-font-family;
+}
+
+.base-font-alt {
+  font-family: $base-font-family-alt;
+}
+
+/* ==========================
+    Body Text
+   ========================== */
+
+.lede {
+  @include font-size($lede-font-size);
+}
+
+.body-text {
+  @include font-size($body-text);
+}
+
+.small-body-text {
+  @include font-size($small-body-text);
+}
+
+.disclaimer-text {
+  @include font-size($disclaimer-text);
+}
+
+small {
+  display: inline-block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote {
+  clear: inherit;
+  margin-bottom: $base-spacing / 3;
+  vertical-align: middle;
+}
+
+p,
+.p {
+	margin-bottom: $base-spacing;
+  font-family: $base-font-family;
+  word-wrap: break-word;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+i {
+  font-style: normal;
+}
+
+blockquote {
+  width: 75%;
+  padding-left: $base-spacing;
+  border-left: 3px solid currentColor;
+  font-style: italic;
+  color: tint($base-font-color, 20%);
+}
+
+q {
+  quotes: '\201C' '\201D' '\2018' '\2019';
+}
+
+abbr {
+  border-bottom: 1px dotted currentColor;
+  cursor: help;
+}
+
+address {
+  font-style: normal;
+}
+
+b,
+strong,
+.b {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+dfn {
+  font-style: italic;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+mark {
+  background: $info-bg;
+  color: $info-color;
+}

@@ -1,0 +1,71 @@
+[class*='fa-facebook'] {
+  color: $facebook-link-color;
+
+  &:hover {
+    color: darken($facebook-link-color, 5%);
+  }
+}
+
+[class*='fa-twitter'] {
+  color: $twitter-link-color;
+
+  &:hover {
+    color: darken($twitter-link-color, 5%);
+  }
+}
+
+[class*='fa-pinterest'] {
+  color: $pinterest-link-color;
+
+  &:hover {
+    color: darken($pinterest-link-color, 5%);
+  }
+}
+
+[class*='fa-codepen'] {
+  color: $codepen-link-color;
+
+  &:hover {
+    color: darken($codepen-link-color, 5%);
+  }
+}
+
+[class*='fa-instagram'] {
+  color: $instagram-link-color;
+
+  &:hover {
+    color: darken($instagram-link-color, 5%);
+  }
+}
+
+[class*='fa-github'] {
+  color: $github-link-color;
+
+  &:hover {
+    color: darken($github-link-color, 5%);
+  }
+}
+
+[class*='fa-dribbble'] {
+  color: $dribbble-link-color;
+
+  &:hover {
+    color: darken($dribbble-link-color, 5%);
+  }
+}
+
+// // Build Headings
+// $i: 1;
+// @each $value in $icons-list {
+//   [class*='#{nth($value, 1)}'] {
+//     color: nth($value, 2);
+//   }
+//   $i: $i + 1 !global;
+// }
+
+// // extend later
+// // @if $#{}-link-color !== null {
+// //   color: $color-primary-brand;
+// // } @else {
+// //   color: $#{}-link-color;
+// // }

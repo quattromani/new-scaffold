@@ -1,0 +1,13 @@
+// Responsive images mixin
+@mixin responsive-image($position: top center, $w: 624px, $h: $w, $radius: 0) {
+  width: $w;
+  height: $h;
+  border-radius: $radius;
+  object-fit: cover;
+  object-position: $position;
+  overflow: hidden;
+
+  &:not(:root:root) {
+    object-fit: none;
+  }
+}

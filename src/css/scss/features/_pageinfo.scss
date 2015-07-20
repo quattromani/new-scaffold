@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@if $pageinfo {
+  .viewport,
+  .loadtime {
+    position: fixed;
+    bottom: 0;
+    @include padding($base-spacing/2);
+    @include rgba($color-black, $site-alpha);
+    font-family: $pre;
+    @include font-size(10);
+    color: $color-pre-green;
+  }
+
+  .viewport {
+    right: 0;
+    border-top-left-radius: $base-border-radius;
+  }
+
+  .loadtime {
+    left: 0;
+    border-top-right-radius: $base-border-radius;
+  }
+}

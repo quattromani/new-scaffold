@@ -1,0 +1,52 @@
+hr {
+	@include margin($base-spacing, 0);
+	border: 0;
+	border-top: 1px solid $hr-color-top;
+	border-bottom: 1px solid $hr-color-bottom;
+
+  &.mobile {
+    display: none;
+
+    @include media($mobile) {
+      display: block;
+      border-top: 2px solid #ccc;
+      border-bottom: 0;
+    }
+  }
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+
+  > span {
+    @include inline-block;
+    @include padding(0 $base-spacing/2);
+    @include font-family($heading-font-family-alt);
+    @include font-size(20);
+    position: relative;
+    text-transform: uppercase;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 1px;
+      background: #aaa;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: $base-spacing/2;
+    }
+
+    &:after {
+      left: 100%;
+      margin-left: $base-spacing/2;
+    }
+  }
+}

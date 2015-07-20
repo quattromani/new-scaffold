@@ -1,0 +1,9 @@
+@mixin accordion {
+  li & {
+    font-weight: bold;
+  }
+
+  li {
+    display: none;
+  }
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.tabbed-buttons {
+	ul {
+		@include horizontal-list;
+		li.closer.js-hidden {display:none;}
+		li.closer {
+			display:inline;
+			background-color: $color-white ;
+			a {
+				background-color: $color-white;
+				color: $color-black;
+				&:hover {
+					background-color: $color-white;
+					color: $color-black;
+				}
+			}
+			.icon-close {
+				@include icon-before($icon-close);
+				@include inline-block;
+			  @include border-radius(60px);
+        @include box-shadow(0px 0px 2px $color-black);
+			}
+		}
+		li {
+			a {
+				@include inline-block;
+				@include padding($base-spacing/3 $base-spacing);
+				@include font-family($heading-font-family-alt);
+        margin-right: $base-spacing/4;
+				background-color: $tab-bg;
+				color: $tab-text-color;
+        text-align: center;
+				text-transform: uppercase;
+
+        &.js-active {
+					background-color: $tab-bg-active;
+					color: $tab-text-color-hover;
+				}
+
+        &:hover {
+          background-color: $tab-bg-hover;
+          color: $tab-text-color-hover;
+        }
+
+				@include media($mobile) {
+					width: 100%;
+					text-align: center;
+				}
+			}
+
+      &:last-of-type {
+        a {
+          margin-right: 0;
+        }
+      }
+
+			@include media($mobile) {
+				display: block;
+				margin-bottom: $base-spacing/4;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+  @include media($mobile) {
+    margin-top: $base-spacing;
+  }
+}

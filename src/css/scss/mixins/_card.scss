@@ -1,0 +1,74 @@
+@mixin card {
+  position: relative;
+  height: 440px; // magic number
+  margin-bottom: $base-spacing;
+  border: 1px solid $color-light-grey;
+  background-color: $color-white;
+
+  @include media($tablet) {
+    height: 410px;
+  }
+
+  @include media($mobile) {
+    height: 375px;
+  }
+
+  figure {
+    border: $base-spacing/2 solid $color-white;
+    background-color: $color-white;
+
+    img {
+      @include responsive-image(top, 100%);
+      margin-bottom: $base-spacing/2;
+    }
+  }
+
+  figcaption {
+    bottom: $base-spacing/4;
+    margin-bottom: 0;
+
+    time {
+      @extend .flag;
+      @include margin($base-spacing/3 0);
+      @include padding($base-spacing/4 $base-spacing/2);
+      width: 100%;
+    }
+
+    h3 {
+      @include font-family($heading-font-family-alt);
+      @include font-size(18);
+      margin-bottom: $base-spacing/2;
+    }
+
+    h4 {
+      @include font-family($base-font-family);
+      @include font-size(16);
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-weight: 100;
+      color: $base-font-color;
+    }
+
+    span {
+      @include inline-block;
+      width: 100%;
+      margin-top: $base-spacing/2;
+      color: $color-brand-primary;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover {
+    img {
+      @include opacity(.8);
+    }
+
+    h3 {
+      color: $color-brand-primary !important;
+    }
+  }
+}

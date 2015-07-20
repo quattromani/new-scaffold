@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.container {
+  @include outer-container;
+  position: relative;
+}
+
+.content {
+  @include padding($base-spacing);
+  position: relative;
+  min-height: 85vh; // experimental
+  overflow: hidden;
+  z-index: 99;
+}
+
+section {
+  @include outer-container;
+}
+
+article {
+  @include span-columns(8);
+  min-height: $base-spacing; // hack to ensure that an empty article occupies its space
+
+  @include media($tablet) {
+    @include span-columns(12);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+
+aside {
+  @include span-columns(4);
+
+  @include media($tablet) {
+    @include span-columns(4);
+  }
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
+}
+
+.row {
+  @include outer-container;
+  margin-bottom: $base-spacing;
+}

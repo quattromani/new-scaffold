@@ -1,0 +1,51 @@
+// =Alpha
+$site-alpha: .65;
+$secondary-alpha: .45;
+
+// =Colors
+$color-white: #fff;
+$color-off-white: whitesmoke;
+$color-black: #000;
+$color-grey: #999;
+$color-light-grey: #ccc;
+$color-dark-grey: #4e4e56;
+$color-pre-green: #3eb633;
+
+// =Brand Palette
+$color-brand-primary: black; // Headings
+$color-brand-secondary: black; // Text
+$color-brand-tertiary: white; // Background
+$color-brand-quaternary: #ffda3a; // Accent yellow
+$color-brand-quinary: #ebebeb; // Accent grey
+$color-brand-senary: #ffda3a; // Accent yellow
+
+$color-brand-primary-complimentary: white;
+$color-brand-secondary-complimentary: white;
+$color-brand-tertiary-complimentary: black;
+$color-brand-quaternary-complimentary: #ffda3a;
+$color-brand-quinary-complimentary: #ebebeb;
+$color-brand-senary-complimentary: #ffda3a;
+
+$color-primary-red: red;
+$color-primary-green: green;
+$color-primary-blue: blue;
+
+// =Background
+$site-bg: $color-brand-tertiary;
+$site-bg-start: $color-brand-tertiary;
+$site-bg-end: #fff;
+$site-background-attachment: null; // 'fixed, local, inherit, or null'
+
+// =Default Text Colors
+$base-font-color: $color-brand-secondary;
+$base-accent-color: $color-brand-tertiary;
+$heading-color: $color-brand-primary;
+$heading-color-alt: $color-brand-quaternary;
+
+// =Supplementary Colors
+$alert-bg: $color-primary-red;
+$alert-color: $color-primary-red;
+$success-bg: $color-primary-green;
+$success-color: $color-primary-green;
+$info-bg: mix($color-brand-primary, $color-white, 20%);
+$info-color: $color-primary-blue;
